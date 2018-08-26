@@ -12,9 +12,9 @@ public class LoginCrl {
 		return "login";
 	}
 
-	@RequestMapping("/login2")
+	@RequestMapping("/")
 	public String showCustomers2() {
-		return "login2";
+		return "index";
 	}
 
 }

@@ -1,36 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <configuration>
-	<include resource="org/springframework/boot/logging/logback/defaults.xml" />
+	<include
+		resource="org/springframework/boot/logging/logback/defaults.xml" />
+	<!-- 預設檔名spring.log ，不可修改 -->
 	<property name="LOG_FILE"
 		value="${LOG_FILE:-${LOG_PATH:-${LOG_TEMP:-${java.io.tmpdir:-/tmp}}/}spring.log}" />
-
 
 	<include resource="org/springframework/boot/logging/logback/console-appender.xml" />
 	<include resource="org/springframework/boot/logging/logback/file-appender.xml" />
 
-	<appender name="consoleOut"
-		class="ch.qos.logback.core.ConsoleAppender">
+<!-- 自定義consoleOut 只存error -->
+	<appender name="consoleOut" class="ch.qos.logback.core.ConsoleAppender">
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>ERROR</level>
+		</filter>
 		<encoder>
-			<pattern>%-4relative [%thread] %-5level %logger{35} - %msg %n
-			</pattern>
-		</encoder>
-	</appender>
-	
-	<appender name="fileOut"
-		class="ch.qos.logback.core.ConsoleAppender">
-		<encoder>
-			<pattern>%-4relative [%thread] %-5level %logger{35} - %msg %n
+			<pattern>
+				%-4relative [%thread] %-5level %logger{30} - %msg%n
 			</pattern>
 		</encoder>
 	</appender>
 
-	<root level="trace">
-			<appender-ref ref="consoleOut" />
-	
-		<appender-ref ref="fileOut" />
+
+	<!-- 一次只能存在一個 root level -->
+	<root level="INFO">
+<!-- 			<appender-ref ref="CONSOLE" /> -->
+		<appender-ref ref="consoleOut" />
+		<appender-ref ref="FILE" />
+
 	</root>
-<!-- 	<root level="error"> -->
-<!-- 		<appender-ref ref="consoleOut" /> -->
-<!-- 	</root> -->
 </configuration>

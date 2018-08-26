@@ -1,0 +1,107 @@
+2018-08-26 18:20:55.318  INFO 9311 --- [main] com.demo.DemoApplication                 : Starting DemoApplication on Jia-yinteki-MacBook-Pro.local with PID 9311 (/Users/jia/git/demoSpringBoot/demoSpringBoot/target/classes started by jia in /Users/jia/git/demoSpringBoot/demoSpringBoot)
+2018-08-26 18:20:55.358  INFO 9311 --- [main] com.demo.DemoApplication                 : No active profile set, falling back to default profiles: default
+2018-08-26 18:20:55.447  INFO 9311 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b5d6a01: startup date [Sun Aug 26 18:20:55 CST 2018]; root of context hierarchy
+2018-08-26 18:20:57.440  INFO 9311 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d4aa98e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-26 18:20:58.308  INFO 9311 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-08-26 18:20:58.378  INFO 9311 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-26 18:20:58.378  INFO 9311 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-26 18:20:58.401  INFO 9311 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/jia/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-08-26 18:20:58.826  INFO 9311 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-08-26 18:20:58.858  INFO 9311 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-08-26 18:20:58.860  INFO 9311 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3414 ms
+2018-08-26 18:20:58.993  INFO 9311 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-08-26 18:20:59.002  INFO 9311 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-26 18:20:59.003  INFO 9311 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-26 18:20:59.003  INFO 9311 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-26 18:20:59.004  INFO 9311 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-26 18:20:59.480  INFO 9311 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-08-26 18:20:59.974  INFO 9311 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-08-26 18:21:00.069  INFO 9311 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-08-26 18:21:00.114  INFO 9311 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-08-26 18:21:00.250  INFO 9311 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-08-26 18:21:00.252  INFO 9311 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-08-26 18:21:00.317  INFO 9311 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-08-26 18:21:00.556  INFO 9311 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-08-26 18:21:01.198  INFO 9311 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-08-26 18:21:02.020  INFO 9311 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-26 18:21:02.500  INFO 9311 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b5d6a01: startup date [Sun Aug 26 18:20:55 CST 2018]; root of context hierarchy
+2018-08-26 18:21:02.573  WARN 9311 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-08-26 18:21:02.631  INFO 9311 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login]}" onto public java.lang.String com.demo.controller.LoginCrl.showCustomers()
+2018-08-26 18:21:02.632  INFO 9311 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.demo.controller.LoginCrl.showCustomers2()
+2018-08-26 18:21:02.636  INFO 9311 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mem/add]}" onto public java.lang.String com.demo.controller.MemCrl.addMem()
+2018-08-26 18:21:02.636  INFO 9311 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mem/show]}" onto public java.lang.String com.demo.controller.MemCrl.showMemList()
+2018-08-26 18:21:02.640  INFO 9311 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addMemberPage],methods=[GET]}" onto public java.lang.String com.demo.controller.MemJPACrl.addMemberPage()
+2018-08-26 18:21:02.641  INFO 9311 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rest]}" onto public java.lang.String com.demo.controller.RestCrl.login()
+2018-08-26 18:21:02.646  INFO 9311 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-26 18:21:02.647  INFO 9311 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-26 18:21:02.701  INFO 9311 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-26 18:21:02.701  INFO 9311 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-26 18:21:02.793  INFO 9311 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-08-26 18:21:03.144  INFO 9311 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-08-26 18:21:03.146  INFO 9311 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-26 18:21:03.155  INFO 9311 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-26 18:21:03.235  INFO 9311 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-26 18:21:03.240  INFO 9311 --- [main] com.demo.DemoApplication                 : Started DemoApplication in 8.718 seconds (JVM running for 9.31)
+2018-08-26 18:21:41.015  INFO 9311 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-26 18:21:41.015  INFO 9311 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-26 18:21:41.045  INFO 9311 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2018-08-26 18:28:38.726  INFO 9311 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b5d6a01: startup date [Sun Aug 26 18:20:55 CST 2018]; root of context hierarchy
+2018-08-26 18:28:38.730  INFO 9311 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-08-26 18:28:38.732  INFO 9311 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-08-26 18:28:38.734  INFO 9311 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-08-26 18:28:38.737  INFO 9311 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-08-26 18:28:38.746  INFO 9311 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-08-26 18:28:54.201  INFO 9404 --- [main] com.demo.DemoApplication                 : Starting DemoApplication on Jia-yinteki-MacBook-Pro.local with PID 9404 (/Users/jia/git/demoSpringBoot/demoSpringBoot/target/classes started by jia in /Users/jia/git/demoSpringBoot/demoSpringBoot)
+2018-08-26 18:28:54.207  INFO 9404 --- [main] com.demo.DemoApplication                 : No active profile set, falling back to default profiles: default
+2018-08-26 18:28:54.324  INFO 9404 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3c419631: startup date [Sun Aug 26 18:28:54 CST 2018]; root of context hierarchy
+2018-08-26 18:28:56.340  INFO 9404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$52189fdf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-26 18:28:57.262  INFO 9404 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-08-26 18:28:57.392  INFO 9404 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-26 18:28:57.403  INFO 9404 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-26 18:28:57.476  INFO 9404 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/jia/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-08-26 18:28:58.126  INFO 9404 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-08-26 18:28:58.132  INFO 9404 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-08-26 18:28:58.133  INFO 9404 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3809 ms
+2018-08-26 18:28:58.263  INFO 9404 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-08-26 18:28:58.280  INFO 9404 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-26 18:28:58.282  INFO 9404 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-26 18:28:58.282  INFO 9404 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-26 18:28:58.282  INFO 9404 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-26 18:28:58.735  INFO 9404 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-08-26 18:28:59.251  INFO 9404 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-08-26 18:28:59.471  INFO 9404 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-08-26 18:28:59.508  INFO 9404 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-08-26 18:28:59.666  INFO 9404 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-08-26 18:28:59.669  INFO 9404 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-08-26 18:28:59.760  INFO 9404 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-08-26 18:29:00.033  INFO 9404 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-08-26 18:29:00.820  INFO 9404 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-08-26 18:29:01.735  INFO 9404 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-26 18:29:02.308  INFO 9404 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3c419631: startup date [Sun Aug 26 18:28:54 CST 2018]; root of context hierarchy
+2018-08-26 18:29:02.388  WARN 9404 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-08-26 18:29:02.480  INFO 9404 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login]}" onto public java.lang.String com.demo.controller.LoginCrl.showCustomers()
+2018-08-26 18:29:02.482  INFO 9404 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.demo.controller.LoginCrl.showCustomers2()
+2018-08-26 18:29:02.486  INFO 9404 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mem/add]}" onto public java.lang.String com.demo.controller.MemCrl.addMem()
+2018-08-26 18:29:02.487  INFO 9404 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mem/show]}" onto public java.lang.String com.demo.controller.MemCrl.showMemList()
+2018-08-26 18:29:02.496  INFO 9404 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addMemberPage],methods=[GET]}" onto public java.lang.String com.demo.controller.MemJPACrl.addMemberPage()
+2018-08-26 18:29:02.500  INFO 9404 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rest]}" onto public java.lang.String com.demo.controller.RestCrl.login()
+2018-08-26 18:29:02.508  INFO 9404 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-26 18:29:02.510  INFO 9404 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-26 18:29:02.583  INFO 9404 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-26 18:29:02.583  INFO 9404 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-26 18:29:02.718  INFO 9404 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-08-26 18:29:03.176  INFO 9404 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-08-26 18:29:03.179  INFO 9404 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-26 18:29:03.190  INFO 9404 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-26 18:29:03.286  INFO 9404 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-26 18:29:03.294  INFO 9404 --- [main] com.demo.DemoApplication                 : Started DemoApplication in 9.958 seconds (JVM running for 10.551)
+2018-08-26 18:29:21.110  INFO 9404 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3c419631: startup date [Sun Aug 26 18:28:54 CST 2018]; root of context hierarchy
+2018-08-26 18:29:21.113  INFO 9404 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-08-26 18:29:21.114  INFO 9404 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-08-26 18:29:21.118  INFO 9404 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-08-26 18:29:21.121  INFO 9404 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-08-26 18:29:21.132  INFO 9404 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
