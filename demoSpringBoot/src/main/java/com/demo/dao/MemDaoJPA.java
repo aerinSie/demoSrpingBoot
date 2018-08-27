@@ -1,24 +1,26 @@
 package com.demo.dao;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import com.demo.model.MemVo;
+import com.demo.model.MemVoJPA;
 
 @Repository
 public class MemDaoJPA {
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 
-	public String showMember(MemVo memVo) {
+	public String showMember(MemVoJPA memVo) {
 		StringBuilder sql =new StringBuilder();
 
 		return "show";
 
 	}
 
-	public void addMember(MemVo memberAccount) {
+	public void addMember(MemVoJPA memberAccount) {
 		StringBuilder sql =new StringBuilder();
 		sql.append(" INSERT INTO mem(PASSWORD, EMAIL, ADDRESS,CELLPHONE,CREATE_DATE) ")
 		.append(" VALUES (?,?,?,?,NOW()) ")
@@ -33,6 +35,21 @@ public class MemDaoJPA {
 //						+ "VALUES (?,?,?,?,NOW())",
 //				memberAccount.getPassword(), memberAccount.getEmail(), memberAccount.getAddress(),
 //				memberAccount.getCellphone());
+	}
+
+	public void save(MemVoJPA memberaccount) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void deleteById(long id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public Optional<MemVoJPA> findById(long id) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

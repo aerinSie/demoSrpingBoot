@@ -14,29 +14,28 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.demo.dao.MemDao;
-import com.demo.iface.MemIface;
-import com.demo.model.MemVo;
+import com.demo.dao.MemDaoJPA;
+import com.demo.model.MemVoJPA;
 
 @RestController
 @RequestMapping("/memberApi")
 public class RestApiCrl {
 	@Autowired
-	MemDao memDao;
+	MemDaoJPA memDao;
 
 	//設定返回的response的媒體類型和文字的編碼,ex:返回為JSON格式,字元編碼為UTF-8
 	@RequestMapping(value="/{id}",produces={"application/json;charset=UTF-8"})
-	public Optional<MemVo> read(@PathVariable long id) {
+	public Optional<MemVoJPA> read(@PathVariable long id) {
 			return memDao.findById(id);
 		 }
 
 	@RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
-	public void create(@RequestBody MemVo memberaccount) {
+	public void create(@RequestBody MemVoJPA memberaccount) {
 		memDao.save(memberaccount);
 	}
 
 	@RequestMapping(method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
-	public void update(@RequestBody MemVo memberaccount) {
+	public void update(@RequestBody MemVoJPA memberaccount) {
 		memDao.save(memberaccount);
 
 	}
@@ -48,7 +47,7 @@ public class RestApiCrl {
 	}
 	
 	@RequestMapping(value="/{id}")
-	 public Optional<MemVo> read(@ModelAttribute("message") String msg,Model model,@PathVariable long id) {
+	 public Optional<MemVoJPA> read(@ModelAttribute("message") String msg,Model model,@PathVariable long id) {
 
 		Map map = new HashMap();
 		String email = map.get("EMAIL").toString();
