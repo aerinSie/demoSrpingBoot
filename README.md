@@ -21,3 +21,6 @@ $ sudo kill [那個pid] <br>
 
 # other
 也可以用ＳＴＳ來開發或是ＥＣＬＩＰＳＥ的ＳＴＳ外掛
+
+# 參考來源
+https://ithelp.ithome.com.tw/articles/10197493
