@@ -7,13 +7,15 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
-@Table(name = "memberaccountjpa")
-public class MemberAccountJPA {
+@Entity//@Entity告訴Spring這是數據模型層的宣告
+
+@Table(name = "mem")//@table 的name對映到資料庫中的資料表名稱
+
+public class MemVoJPA {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
-	@Column(name = "EMAIL")
+	@Column(name = "EMAIL") //@Column對應到Table的欄位中的欄位名稱
 	private String email;
 	@Column(name = "CELLPHONE")
 	private String cellphone;

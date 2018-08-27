@@ -9,8 +9,13 @@ import com.demo.model.MemVo;
 @Service
 public class MemService {
 	@Autowired
-	MemDao memberDao;
-	public void addMember(MemVo memVo){
-		memberDao.ShowMember(memVo);
+	MemDao memDao;
+	public void showMember(MemVo memVo){
+		memDao.showMember(memVo);
 	}
+	
+	public void addMember(MemVo memVo){
+		memDao.addMember(memVo);
+
+  }
 }

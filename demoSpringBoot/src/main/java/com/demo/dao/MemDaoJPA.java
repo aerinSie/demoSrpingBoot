@@ -1,7 +1,5 @@
 package com.demo.dao;
 
-import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
@@ -9,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import com.demo.model.MemVo;
 
 @Repository
-public class MemDao {
+public class MemDaoJPA {
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 
@@ -35,21 +33,6 @@ public class MemDao {
 //						+ "VALUES (?,?,?,?,NOW())",
 //				memberAccount.getPassword(), memberAccount.getEmail(), memberAccount.getAddress(),
 //				memberAccount.getCellphone());
-	}
-
-	public void save(MemVo memberaccount) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public void deleteById(long id) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public Optional<MemVo> findById(long id) {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 }

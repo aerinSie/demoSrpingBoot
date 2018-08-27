@@ -10,6 +10,7 @@
 	<include resource="org/springframework/boot/logging/logback/console-appender.xml" />
 	<include resource="org/springframework/boot/logging/logback/file-appender.xml" />
 
+<!-- RACE < DEBUG < INFO < WARN < ERROR < FATAL -->
 <!-- 自定義consoleOut 只存error -->
 	<appender name="consoleOut" class="ch.qos.logback.core.ConsoleAppender">
 		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">

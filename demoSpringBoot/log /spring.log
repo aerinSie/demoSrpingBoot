@@ -1,107 +1,588 @@
-2018-08-26 18:20:55.318  INFO 9311 --- [main] com.demo.DemoApplication                 : Starting DemoApplication on Jia-yinteki-MacBook-Pro.local with PID 9311 (/Users/jia/git/demoSpringBoot/demoSpringBoot/target/classes started by jia in /Users/jia/git/demoSpringBoot/demoSpringBoot)
-2018-08-26 18:20:55.358  INFO 9311 --- [main] com.demo.DemoApplication                 : No active profile set, falling back to default profiles: default
-2018-08-26 18:20:55.447  INFO 9311 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b5d6a01: startup date [Sun Aug 26 18:20:55 CST 2018]; root of context hierarchy
-2018-08-26 18:20:57.440  INFO 9311 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d4aa98e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-26 18:20:58.308  INFO 9311 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2018-08-26 18:20:58.378  INFO 9311 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2018-08-26 18:20:58.378  INFO 9311 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
-2018-08-26 18:20:58.401  INFO 9311 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/jia/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-2018-08-26 18:20:58.826  INFO 9311 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2018-08-26 18:20:58.858  INFO 9311 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2018-08-26 18:20:58.860  INFO 9311 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3414 ms
-2018-08-26 18:20:58.993  INFO 9311 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
-2018-08-26 18:20:59.002  INFO 9311 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-08-26 18:20:59.003  INFO 9311 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-08-26 18:20:59.003  INFO 9311 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-08-26 18:20:59.004  INFO 9311 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2018-08-26 18:20:59.480  INFO 9311 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-08-26 18:20:59.974  INFO 9311 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-08-26 18:21:00.069  INFO 9311 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2018-08-26 18:21:00.114  INFO 9311 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2018-08-27 10:04:36.793  INFO 15719 --- [main] com.demo.DemoApplication                 : Starting DemoApplication on Jia-yinteki-MacBook-Pro.local with PID 15719 (/Users/jia/git/demoSpringBoot/demoSpringBoot/target/classes started by jia in /Users/jia/git/demoSpringBoot/demoSpringBoot)
+2018-08-27 10:04:36.802  INFO 15719 --- [main] com.demo.DemoApplication                 : No active profile set, falling back to default profiles: default
+2018-08-27 10:04:36.896  INFO 15719 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3c130745: startup date [Mon Aug 27 10:04:36 CST 2018]; root of context hierarchy
+2018-08-27 10:04:39.315  INFO 15719 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$244ca965] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-27 10:04:40.080  INFO 15719 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-08-27 10:04:40.126  INFO 15719 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-27 10:04:40.127  INFO 15719 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-27 10:04:40.141  INFO 15719 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/jia/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-08-27 10:04:40.509  INFO 15719 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-08-27 10:04:40.516  INFO 15719 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-08-27 10:04:40.517  INFO 15719 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3620 ms
+2018-08-27 10:04:40.631  INFO 15719 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-08-27 10:04:40.637  INFO 15719 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-27 10:04:40.642  INFO 15719 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-27 10:04:40.643  INFO 15719 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-27 10:04:40.643  INFO 15719 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-27 10:04:41.010  INFO 15719 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-08-27 10:04:41.533  INFO 15719 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-08-27 10:04:41.609  INFO 15719 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-08-27 10:04:41.639  INFO 15719 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2018-08-26 18:21:00.250  INFO 9311 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
-2018-08-26 18:21:00.252  INFO 9311 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2018-08-26 18:21:00.317  INFO 9311 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2018-08-26 18:21:00.556  INFO 9311 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2018-08-26 18:21:01.198  INFO 9311 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2018-08-26 18:21:02.020  INFO 9311 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-08-26 18:21:02.500  INFO 9311 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b5d6a01: startup date [Sun Aug 26 18:20:55 CST 2018]; root of context hierarchy
-2018-08-26 18:21:02.573  WARN 9311 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2018-08-26 18:21:02.631  INFO 9311 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login]}" onto public java.lang.String com.demo.controller.LoginCrl.showCustomers()
-2018-08-26 18:21:02.632  INFO 9311 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.demo.controller.LoginCrl.showCustomers2()
-2018-08-26 18:21:02.636  INFO 9311 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mem/add]}" onto public java.lang.String com.demo.controller.MemCrl.addMem()
-2018-08-26 18:21:02.636  INFO 9311 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mem/show]}" onto public java.lang.String com.demo.controller.MemCrl.showMemList()
-2018-08-26 18:21:02.640  INFO 9311 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addMemberPage],methods=[GET]}" onto public java.lang.String com.demo.controller.MemJPACrl.addMemberPage()
-2018-08-26 18:21:02.641  INFO 9311 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rest]}" onto public java.lang.String com.demo.controller.RestCrl.login()
-2018-08-26 18:21:02.646  INFO 9311 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2018-08-26 18:21:02.647  INFO 9311 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-08-26 18:21:02.701  INFO 9311 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-08-26 18:21:02.701  INFO 9311 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-08-26 18:21:02.793  INFO 9311 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2018-08-26 18:21:03.144  INFO 9311 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
-2018-08-26 18:21:03.146  INFO 9311 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
-2018-08-26 18:21:03.155  INFO 9311 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
-2018-08-26 18:21:03.235  INFO 9311 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2018-08-26 18:21:03.240  INFO 9311 --- [main] com.demo.DemoApplication                 : Started DemoApplication in 8.718 seconds (JVM running for 9.31)
-2018-08-26 18:21:41.015  INFO 9311 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
-2018-08-26 18:21:41.015  INFO 9311 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
-2018-08-26 18:21:41.045  INFO 9311 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
-2018-08-26 18:28:38.726  INFO 9311 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b5d6a01: startup date [Sun Aug 26 18:20:55 CST 2018]; root of context hierarchy
-2018-08-26 18:28:38.730  INFO 9311 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
-2018-08-26 18:28:38.732  INFO 9311 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
-2018-08-26 18:28:38.734  INFO 9311 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2018-08-26 18:28:38.737  INFO 9311 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-08-26 18:28:38.746  INFO 9311 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2018-08-26 18:28:54.201  INFO 9404 --- [main] com.demo.DemoApplication                 : Starting DemoApplication on Jia-yinteki-MacBook-Pro.local with PID 9404 (/Users/jia/git/demoSpringBoot/demoSpringBoot/target/classes started by jia in /Users/jia/git/demoSpringBoot/demoSpringBoot)
-2018-08-26 18:28:54.207  INFO 9404 --- [main] com.demo.DemoApplication                 : No active profile set, falling back to default profiles: default
-2018-08-26 18:28:54.324  INFO 9404 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3c419631: startup date [Sun Aug 26 18:28:54 CST 2018]; root of context hierarchy
-2018-08-26 18:28:56.340  INFO 9404 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$52189fdf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-08-26 18:28:57.262  INFO 9404 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2018-08-26 18:28:57.392  INFO 9404 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2018-08-26 18:28:57.403  INFO 9404 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
-2018-08-26 18:28:57.476  INFO 9404 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/jia/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-2018-08-26 18:28:58.126  INFO 9404 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2018-08-26 18:28:58.132  INFO 9404 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2018-08-26 18:28:58.133  INFO 9404 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3809 ms
-2018-08-26 18:28:58.263  INFO 9404 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
-2018-08-26 18:28:58.280  INFO 9404 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-08-26 18:28:58.282  INFO 9404 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-08-26 18:28:58.282  INFO 9404 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-08-26 18:28:58.282  INFO 9404 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2018-08-26 18:28:58.735  INFO 9404 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-08-26 18:28:59.251  INFO 9404 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-08-26 18:28:59.471  INFO 9404 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2018-08-26 18:28:59.508  INFO 9404 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2018-08-27 10:04:41.793  INFO 15719 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-08-27 10:04:41.795  INFO 15719 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-08-27 10:04:41.873  INFO 15719 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-08-27 10:04:42.078  INFO 15719 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-08-27 10:04:42.856  INFO 15719 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@3bb5ceb'
+2018-08-27 10:04:42.862  INFO 15719 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-08-27 10:04:44.138  INFO 15719 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-27 10:04:44.650  INFO 15719 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3c130745: startup date [Mon Aug 27 10:04:36 CST 2018]; root of context hierarchy
+2018-08-27 10:04:44.749  WARN 15719 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-08-27 10:04:44.825  INFO 15719 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login]}" onto public java.lang.String com.demo.controller.LoginCrl.showCustomers()
+2018-08-27 10:04:44.826  INFO 15719 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.demo.controller.LoginCrl.showCustomers2()
+2018-08-27 10:04:44.832  INFO 15719 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mem/add]}" onto public java.lang.String com.demo.controller.MemCrl.addMem()
+2018-08-27 10:04:44.833  INFO 15719 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mem/show]}" onto public java.lang.String com.demo.controller.MemCrl.showMemList()
+2018-08-27 10:04:44.838  INFO 15719 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addMemJpa],methods=[GET]}" onto public java.lang.String com.demo.controller.MemJPACrl.addMemJpa()
+2018-08-27 10:04:44.839  INFO 15719 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rest]}" onto public java.lang.String com.demo.controller.RestCrl.login()
+2018-08-27 10:04:44.847  INFO 15719 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-27 10:04:44.849  INFO 15719 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-27 10:04:44.974  INFO 15719 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-27 10:04:44.975  INFO 15719 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-27 10:04:45.101  INFO 15719 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-08-27 10:04:45.456  INFO 15719 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-08-27 10:04:45.459  INFO 15719 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-27 10:04:45.472  INFO 15719 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-27 10:04:45.572  INFO 15719 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-27 10:04:45.579  INFO 15719 --- [main] com.demo.DemoApplication                 : Started DemoApplication in 9.56 seconds (JVM running for 10.195)
+2018-08-27 10:05:10.329  INFO 15719 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-27 10:05:10.329  INFO 15719 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-27 10:05:10.402  INFO 15719 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 72 ms
+2018-08-27 10:05:15.522  INFO 15719 --- [http-nio-8080-exec-10] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-08-27 10:06:21.600  INFO 15719 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3c130745: startup date [Mon Aug 27 10:04:36 CST 2018]; root of context hierarchy
+2018-08-27 10:06:21.604  INFO 15719 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-08-27 10:06:21.605  INFO 15719 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-08-27 10:06:21.608  INFO 15719 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-08-27 10:06:21.608  INFO 15719 --- [Thread-3] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+2018-08-27 10:06:21.617  INFO 15719 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-08-27 10:06:21.625  INFO 15719 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-08-27 10:10:10.761  INFO 15812 --- [main] com.demo.DemoApplication                 : Starting DemoApplication on Jia-yinteki-MacBook-Pro.local with PID 15812 (/Users/jia/git/demoSpringBoot/demoSpringBoot/target/classes started by jia in /Users/jia/git/demoSpringBoot/demoSpringBoot)
+2018-08-27 10:10:10.792  INFO 15812 --- [main] com.demo.DemoApplication                 : No active profile set, falling back to default profiles: default
+2018-08-27 10:10:11.008  INFO 15812 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4c9f8c13: startup date [Mon Aug 27 10:10:11 CST 2018]; root of context hierarchy
+2018-08-27 10:10:17.014  INFO 15812 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$131832c5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-27 10:10:20.105  INFO 15812 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-08-27 10:10:20.319  INFO 15812 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-27 10:10:20.320  INFO 15812 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-27 10:10:20.348  INFO 15812 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/jia/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-08-27 10:10:21.364  INFO 15812 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-08-27 10:10:21.373  INFO 15812 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-08-27 10:10:21.373  INFO 15812 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 10365 ms
+2018-08-27 10:10:21.764  INFO 15812 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-08-27 10:10:21.815  INFO 15812 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-27 10:10:21.817  INFO 15812 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-27 10:10:21.818  INFO 15812 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-27 10:10:21.819  INFO 15812 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-27 10:10:22.705  INFO 15812 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-08-27 10:10:24.334  INFO 15812 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-08-27 10:10:24.753  INFO 15812 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-08-27 10:10:24.845  INFO 15812 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2018-08-26 18:28:59.666  INFO 9404 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
-2018-08-26 18:28:59.669  INFO 9404 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2018-08-26 18:28:59.760  INFO 9404 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2018-08-26 18:29:00.033  INFO 9404 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2018-08-26 18:29:00.820  INFO 9404 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2018-08-26 18:29:01.735  INFO 9404 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-08-26 18:29:02.308  INFO 9404 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3c419631: startup date [Sun Aug 26 18:28:54 CST 2018]; root of context hierarchy
-2018-08-26 18:29:02.388  WARN 9404 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2018-08-26 18:29:02.480  INFO 9404 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login]}" onto public java.lang.String com.demo.controller.LoginCrl.showCustomers()
-2018-08-26 18:29:02.482  INFO 9404 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.demo.controller.LoginCrl.showCustomers2()
-2018-08-26 18:29:02.486  INFO 9404 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mem/add]}" onto public java.lang.String com.demo.controller.MemCrl.addMem()
-2018-08-26 18:29:02.487  INFO 9404 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mem/show]}" onto public java.lang.String com.demo.controller.MemCrl.showMemList()
-2018-08-26 18:29:02.496  INFO 9404 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addMemberPage],methods=[GET]}" onto public java.lang.String com.demo.controller.MemJPACrl.addMemberPage()
-2018-08-26 18:29:02.500  INFO 9404 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rest]}" onto public java.lang.String com.demo.controller.RestCrl.login()
-2018-08-26 18:29:02.508  INFO 9404 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2018-08-26 18:29:02.510  INFO 9404 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-08-26 18:29:02.583  INFO 9404 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-08-26 18:29:02.583  INFO 9404 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-08-26 18:29:02.718  INFO 9404 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2018-08-26 18:29:03.176  INFO 9404 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
-2018-08-26 18:29:03.179  INFO 9404 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
-2018-08-26 18:29:03.190  INFO 9404 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
-2018-08-26 18:29:03.286  INFO 9404 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2018-08-26 18:29:03.294  INFO 9404 --- [main] com.demo.DemoApplication                 : Started DemoApplication in 9.958 seconds (JVM running for 10.551)
-2018-08-26 18:29:21.110  INFO 9404 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3c419631: startup date [Sun Aug 26 18:28:54 CST 2018]; root of context hierarchy
-2018-08-26 18:29:21.113  INFO 9404 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
-2018-08-26 18:29:21.114  INFO 9404 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
-2018-08-26 18:29:21.118  INFO 9404 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2018-08-26 18:29:21.121  INFO 9404 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-08-26 18:29:21.132  INFO 9404 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-08-27 10:10:25.267  INFO 15812 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-08-27 10:10:25.270  INFO 15812 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-08-27 10:10:25.604  INFO 15812 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-08-27 10:10:26.702  INFO 15812 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-08-27 10:10:30.236  INFO 15812 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1e977098'
+2018-08-27 10:10:30.244  INFO 15812 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-08-27 10:10:34.422  INFO 15812 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-27 10:10:36.272  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4c9f8c13: startup date [Mon Aug 27 10:10:11 CST 2018]; root of context hierarchy
+2018-08-27 10:10:36.535  WARN 15812 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-08-27 10:10:36.729  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login]}" onto public java.lang.String com.demo.controller.LoginCrl.showCustomers()
+2018-08-27 10:10:36.730  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.demo.controller.LoginCrl.showCustomers2()
+2018-08-27 10:10:36.735  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mem/add]}" onto public java.lang.String com.demo.controller.MemCrl.addMem()
+2018-08-27 10:10:36.735  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mem/show]}" onto public java.lang.String com.demo.controller.MemCrl.showMemList()
+2018-08-27 10:10:36.743  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addMemJpa],methods=[GET]}" onto public java.lang.String com.demo.controller.MemJPACrl.addMemJpa()
+2018-08-27 10:10:36.752  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rest]}" onto public java.lang.String com.demo.controller.RestCrl.login()
+2018-08-27 10:10:36.779  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-27 10:10:36.781  INFO 15812 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-27 10:10:36.947  INFO 15812 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-27 10:10:36.947  INFO 15812 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-27 10:10:37.249  INFO 15812 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-08-27 10:10:38.565  INFO 15812 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-08-27 10:10:38.569  INFO 15812 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-27 10:10:38.593  INFO 15812 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-27 10:10:38.807  INFO 15812 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-27 10:10:38.815  INFO 15812 --- [main] com.demo.DemoApplication                 : Started DemoApplication in 30.04 seconds (JVM running for 31.987)
+2018-08-27 10:10:58.708  INFO 15812 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-27 10:10:58.708  INFO 15812 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-27 10:10:58.750  INFO 15812 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 41 ms
+2018-08-27 10:11:27.581  INFO 15812 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-08-27 10:12:13.268  INFO 15812 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4c9f8c13: startup date [Mon Aug 27 10:10:11 CST 2018]; root of context hierarchy
+2018-08-27 10:12:13.274  INFO 15812 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-08-27 10:12:13.279  INFO 15812 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-08-27 10:12:13.281  INFO 15812 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-08-27 10:12:13.283  INFO 15812 --- [Thread-3] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+2018-08-27 10:12:13.292  INFO 15812 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-08-27 10:12:13.303  INFO 15812 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-08-27 10:12:36.667  INFO 15902 --- [main] com.demo.DemoApplication                 : Starting DemoApplication on Jia-yinteki-MacBook-Pro.local with PID 15902 (/Users/jia/git/demoSpringBoot/demoSpringBoot/target/classes started by jia in /Users/jia/git/demoSpringBoot/demoSpringBoot)
+2018-08-27 10:12:36.674  INFO 15902 --- [main] com.demo.DemoApplication                 : No active profile set, falling back to default profiles: default
+2018-08-27 10:12:36.779  INFO 15902 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5a63f509: startup date [Mon Aug 27 10:12:36 CST 2018]; root of context hierarchy
+2018-08-27 10:12:38.895  INFO 15902 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6adca380] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-27 10:12:40.073  INFO 15902 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-08-27 10:12:40.147  INFO 15902 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-27 10:12:40.148  INFO 15902 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-27 10:12:40.174  INFO 15902 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/jia/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-08-27 10:12:40.659  INFO 15902 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-08-27 10:12:40.667  INFO 15902 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-08-27 10:12:40.668  INFO 15902 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3889 ms
+2018-08-27 10:12:40.801  INFO 15902 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-08-27 10:12:40.809  INFO 15902 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-27 10:12:40.815  INFO 15902 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-27 10:12:40.815  INFO 15902 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-27 10:12:40.816  INFO 15902 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-27 10:12:41.315  INFO 15902 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-08-27 10:12:41.817  INFO 15902 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-08-27 10:12:41.888  INFO 15902 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-08-27 10:12:41.930  INFO 15902 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-08-27 10:12:42.099  INFO 15902 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-08-27 10:12:42.101  INFO 15902 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-08-27 10:12:42.197  INFO 15902 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-08-27 10:12:42.458  INFO 15902 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-08-27 10:12:43.310  INFO 15902 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@32a2a6be'
+2018-08-27 10:12:43.314  INFO 15902 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-08-27 10:12:44.462  INFO 15902 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-27 10:12:45.486  INFO 15902 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5a63f509: startup date [Mon Aug 27 10:12:36 CST 2018]; root of context hierarchy
+2018-08-27 10:12:45.647  WARN 15902 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-08-27 10:12:45.783  INFO 15902 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login]}" onto public java.lang.String com.demo.controller.LoginCrl.showCustomers()
+2018-08-27 10:12:45.784  INFO 15902 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.demo.controller.LoginCrl.showCustomers2()
+2018-08-27 10:12:45.788  INFO 15902 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mem/add]}" onto public java.lang.String com.demo.controller.MemCrl.addMem()
+2018-08-27 10:12:45.789  INFO 15902 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mem/show]}" onto public java.lang.String com.demo.controller.MemCrl.showMemList()
+2018-08-27 10:12:45.795  INFO 15902 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addMemJpa],methods=[GET]}" onto public java.lang.String com.demo.controller.MemJPACrl.addMemJpa()
+2018-08-27 10:12:45.797  INFO 15902 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rest]}" onto public java.lang.String com.demo.controller.RestCrl.login()
+2018-08-27 10:12:45.805  INFO 15902 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-27 10:12:45.807  INFO 15902 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-27 10:12:45.919  INFO 15902 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-27 10:12:45.920  INFO 15902 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-27 10:12:46.165  INFO 15902 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-08-27 10:12:47.098  INFO 15902 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-08-27 10:12:47.120  INFO 15902 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-27 10:12:47.134  INFO 15902 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-27 10:12:47.320  INFO 15902 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-27 10:12:47.329  INFO 15902 --- [main] com.demo.DemoApplication                 : Started DemoApplication in 11.636 seconds (JVM running for 12.27)
+2018-08-27 10:12:53.553  INFO 15902 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-27 10:12:53.554  INFO 15902 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-27 10:12:53.586  INFO 15902 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
+2018-08-27 10:12:53.693  INFO 15902 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-08-27 10:13:47.012  INFO 15902 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5a63f509: startup date [Mon Aug 27 10:12:36 CST 2018]; root of context hierarchy
+2018-08-27 10:13:47.015  INFO 15902 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-08-27 10:13:47.016  INFO 15902 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-08-27 10:13:47.019  INFO 15902 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-08-27 10:13:47.019  INFO 15902 --- [Thread-3] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+2018-08-27 10:13:47.029  INFO 15902 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-08-27 10:13:47.039  INFO 15902 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-08-27 10:13:59.470  INFO 15924 --- [main] com.demo.DemoApplication                 : Starting DemoApplication on Jia-yinteki-MacBook-Pro.local with PID 15924 (/Users/jia/git/demoSpringBoot/demoSpringBoot/target/classes started by jia in /Users/jia/git/demoSpringBoot/demoSpringBoot)
+2018-08-27 10:13:59.481  INFO 15924 --- [main] com.demo.DemoApplication                 : No active profile set, falling back to default profiles: default
+2018-08-27 10:13:59.578  INFO 15924 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@703580bf: startup date [Mon Aug 27 10:13:59 CST 2018]; root of context hierarchy
+2018-08-27 10:14:01.782  INFO 15924 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d073c651] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-27 10:14:02.559  INFO 15924 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-08-27 10:14:02.619  INFO 15924 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-27 10:14:02.620  INFO 15924 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-27 10:14:02.634  INFO 15924 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/jia/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-08-27 10:14:02.991  INFO 15924 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-08-27 10:14:02.997  INFO 15924 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-08-27 10:14:02.997  INFO 15924 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3420 ms
+2018-08-27 10:14:03.106  INFO 15924 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-08-27 10:14:03.115  INFO 15924 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-27 10:14:03.116  INFO 15924 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-27 10:14:03.116  INFO 15924 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-27 10:14:03.116  INFO 15924 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-27 10:14:03.466  INFO 15924 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-08-27 10:14:03.891  INFO 15924 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-08-27 10:14:03.960  INFO 15924 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-08-27 10:14:03.992  INFO 15924 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-08-27 10:14:04.156  INFO 15924 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-08-27 10:14:04.158  INFO 15924 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-08-27 10:14:04.229  INFO 15924 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-08-27 10:14:04.464  INFO 15924 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-08-27 10:14:05.174  INFO 15924 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@55fee662'
+2018-08-27 10:14:05.177  INFO 15924 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-08-27 10:14:06.094  INFO 15924 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-27 10:14:06.564  INFO 15924 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@703580bf: startup date [Mon Aug 27 10:13:59 CST 2018]; root of context hierarchy
+2018-08-27 10:14:06.651  WARN 15924 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-08-27 10:14:06.714  INFO 15924 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login]}" onto public java.lang.String com.demo.controller.LoginCrl.showCustomers()
+2018-08-27 10:14:06.716  INFO 15924 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.demo.controller.LoginCrl.showCustomers2()
+2018-08-27 10:14:06.719  INFO 15924 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mem/add]}" onto public java.lang.String com.demo.controller.MemCrl.addMem()
+2018-08-27 10:14:06.720  INFO 15924 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mem/show]}" onto public java.lang.String com.demo.controller.MemCrl.showMemList()
+2018-08-27 10:14:06.724  INFO 15924 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addMemJpa],methods=[GET]}" onto public java.lang.String com.demo.controller.MemJPACrl.addMemJpa()
+2018-08-27 10:14:06.724  INFO 15924 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rest]}" onto public java.lang.String com.demo.controller.RestCrl.login()
+2018-08-27 10:14:06.729  INFO 15924 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-27 10:14:06.730  INFO 15924 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-27 10:14:06.779  INFO 15924 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-27 10:14:06.779  INFO 15924 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-27 10:14:06.873  INFO 15924 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-08-27 10:14:07.180  INFO 15924 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-08-27 10:14:07.184  INFO 15924 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-27 10:14:07.193  INFO 15924 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-27 10:14:07.298  INFO 15924 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-27 10:14:07.305  INFO 15924 --- [main] com.demo.DemoApplication                 : Started DemoApplication in 8.6 seconds (JVM running for 9.169)
+2018-08-27 10:14:20.275  INFO 15924 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-27 10:14:20.275  INFO 15924 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-27 10:14:20.307  INFO 15924 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
+2018-08-27 10:14:25.654  INFO 15924 --- [http-nio-8080-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-08-27 10:24:39.477  INFO 15924 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@703580bf: startup date [Mon Aug 27 10:13:59 CST 2018]; root of context hierarchy
+2018-08-27 10:24:39.480  INFO 15924 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-08-27 10:24:39.481  INFO 15924 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-08-27 10:24:39.483  INFO 15924 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-08-27 10:24:39.484  INFO 15924 --- [Thread-3] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+2018-08-27 10:24:39.494  INFO 15924 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-08-27 10:24:39.503  INFO 15924 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-08-27 10:26:59.863  INFO 16028 --- [main] com.demo.DemoApplication                 : Starting DemoApplication on Jia-yinteki-MacBook-Pro.local with PID 16028 (/Users/jia/git/demoSpringBoot/demoSpringBoot/target/classes started by jia in /Users/jia/git/demoSpringBoot/demoSpringBoot)
+2018-08-27 10:26:59.873  INFO 16028 --- [main] com.demo.DemoApplication                 : No active profile set, falling back to default profiles: default
+2018-08-27 10:26:59.968  INFO 16028 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5bd03f44: startup date [Mon Aug 27 10:26:59 CST 2018]; root of context hierarchy
+2018-08-27 10:27:01.982  INFO 16028 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b9397152] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-27 10:27:02.757  INFO 16028 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-08-27 10:27:02.816  INFO 16028 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-27 10:27:02.816  INFO 16028 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-27 10:27:02.837  INFO 16028 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/jia/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-08-27 10:27:03.196  INFO 16028 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-08-27 10:27:03.202  INFO 16028 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-08-27 10:27:03.202  INFO 16028 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3235 ms
+2018-08-27 10:27:03.306  INFO 16028 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-08-27 10:27:03.312  INFO 16028 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-27 10:27:03.315  INFO 16028 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-27 10:27:03.316  INFO 16028 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-27 10:27:03.316  INFO 16028 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-27 10:27:03.689  INFO 16028 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-08-27 10:27:04.089  INFO 16028 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-08-27 10:27:04.162  INFO 16028 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-08-27 10:27:04.195  INFO 16028 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-08-27 10:27:04.350  INFO 16028 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-08-27 10:27:04.352  INFO 16028 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-08-27 10:27:04.428  INFO 16028 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-08-27 10:27:04.635  INFO 16028 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-08-27 10:27:05.381  INFO 16028 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@3a6045c6'
+2018-08-27 10:27:05.384  INFO 16028 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-08-27 10:27:06.306  INFO 16028 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-27 10:27:06.748  INFO 16028 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5bd03f44: startup date [Mon Aug 27 10:26:59 CST 2018]; root of context hierarchy
+2018-08-27 10:27:06.824  WARN 16028 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-08-27 10:27:06.889  INFO 16028 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.demo.controller.LoginCrl.showCustomers2()
+2018-08-27 10:27:06.896  INFO 16028 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mem/add]}" onto public java.lang.String com.demo.controller.MemCrl.addMem()
+2018-08-27 10:27:06.897  INFO 16028 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mem/show]}" onto public java.lang.String com.demo.controller.MemCrl.showMemList()
+2018-08-27 10:27:06.906  INFO 16028 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.demo.controller.MemJPACrl.login(com.demo.model.MemVoJPA)
+2018-08-27 10:27:06.907  INFO 16028 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/doLogin],methods=[POST]}" onto public java.lang.String com.demo.controller.MemJPACrl.doLogin(com.demo.model.MemVoJPA)
+2018-08-27 10:27:06.908  INFO 16028 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addMemJpa],methods=[GET]}" onto public java.lang.String com.demo.controller.MemJPACrl.addMemJpa()
+2018-08-27 10:27:06.908  INFO 16028 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rest]}" onto public java.lang.String com.demo.controller.RestCrl.login()
+2018-08-27 10:27:06.914  INFO 16028 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-27 10:27:06.916  INFO 16028 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-27 10:27:06.966  INFO 16028 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-27 10:27:06.966  INFO 16028 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-27 10:27:07.065  INFO 16028 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-08-27 10:27:07.389  INFO 16028 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-08-27 10:27:07.392  INFO 16028 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-27 10:27:07.401  INFO 16028 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-27 10:27:07.494  INFO 16028 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-27 10:27:07.501  INFO 16028 --- [main] com.demo.DemoApplication                 : Started DemoApplication in 8.555 seconds (JVM running for 9.133)
+2018-08-27 10:28:07.384  INFO 16028 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-27 10:28:07.385  INFO 16028 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-27 10:28:07.417  INFO 16028 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
+2018-08-27 10:38:34.382  INFO 16028 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5bd03f44: startup date [Mon Aug 27 10:26:59 CST 2018]; root of context hierarchy
+2018-08-27 10:38:34.385  INFO 16028 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-08-27 10:38:34.390  INFO 16028 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-08-27 10:38:34.393  INFO 16028 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-08-27 10:38:34.394  INFO 16028 --- [Thread-3] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+2018-08-27 10:38:34.403  INFO 16028 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-08-27 10:38:34.415  INFO 16028 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-08-27 10:39:52.932  INFO 16134 --- [main] com.demo.DemoApplication                 : Starting DemoApplication on Jia-yinteki-MacBook-Pro.local with PID 16134 (/Users/jia/git/demoSpringBoot/demoSpringBoot/target/classes started by jia in /Users/jia/git/demoSpringBoot/demoSpringBoot)
+2018-08-27 10:39:52.941  INFO 16134 --- [main] com.demo.DemoApplication                 : No active profile set, falling back to default profiles: default
+2018-08-27 10:39:53.061  INFO 16134 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3d680b5a: startup date [Mon Aug 27 10:39:53 CST 2018]; root of context hierarchy
+2018-08-27 10:39:55.182  INFO 16134 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a4e9d61d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-27 10:39:56.076  INFO 16134 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-08-27 10:39:56.155  INFO 16134 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-27 10:39:56.155  INFO 16134 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-27 10:39:56.179  INFO 16134 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/jia/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-08-27 10:39:56.730  INFO 16134 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-08-27 10:39:56.743  INFO 16134 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-08-27 10:39:56.743  INFO 16134 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3682 ms
+2018-08-27 10:39:56.854  INFO 16134 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-08-27 10:39:56.865  INFO 16134 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-27 10:39:56.866  INFO 16134 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-27 10:39:56.867  INFO 16134 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-27 10:39:56.867  INFO 16134 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-27 10:39:57.236  INFO 16134 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-08-27 10:39:57.645  INFO 16134 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-08-27 10:39:57.706  INFO 16134 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-08-27 10:39:57.733  INFO 16134 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-08-27 10:39:57.930  INFO 16134 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-08-27 10:39:57.932  INFO 16134 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-08-27 10:39:58.017  INFO 16134 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-08-27 10:39:58.270  INFO 16134 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-08-27 10:39:59.027  INFO 16134 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@2ffb3aec'
+2018-08-27 10:39:59.030  INFO 16134 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-08-27 10:39:59.903  INFO 16134 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-27 10:40:00.469  INFO 16134 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3d680b5a: startup date [Mon Aug 27 10:39:53 CST 2018]; root of context hierarchy
+2018-08-27 10:40:00.552  WARN 16134 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-08-27 10:40:00.620  INFO 16134 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.demo.controller.LoginCrl.showCustomers2()
+2018-08-27 10:40:00.625  INFO 16134 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mem/add]}" onto public java.lang.String com.demo.controller.MemCrl.addMem()
+2018-08-27 10:40:00.627  INFO 16134 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mem/show]}" onto public java.lang.String com.demo.controller.MemCrl.showMemList()
+2018-08-27 10:40:00.640  INFO 16134 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/loginHtml],methods=[GET]}" onto public java.lang.String com.demo.controller.MemJPACrl.login(com.demo.model.MemVoJPA)
+2018-08-27 10:40:00.641  INFO 16134 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/doLogin],methods=[POST]}" onto public java.lang.String com.demo.controller.MemJPACrl.doLogin(com.demo.model.MemVoJPA)
+2018-08-27 10:40:00.642  INFO 16134 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addMemJpa],methods=[GET]}" onto public java.lang.String com.demo.controller.MemJPACrl.addMemJpa()
+2018-08-27 10:40:00.643  INFO 16134 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rest]}" onto public java.lang.String com.demo.controller.RestCrl.login()
+2018-08-27 10:40:00.649  INFO 16134 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-27 10:40:00.650  INFO 16134 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-27 10:40:00.727  INFO 16134 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-27 10:40:00.727  INFO 16134 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-27 10:40:00.822  INFO 16134 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-08-27 10:40:01.163  INFO 16134 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-08-27 10:40:01.165  INFO 16134 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-27 10:40:01.175  INFO 16134 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-27 10:40:01.267  INFO 16134 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-27 10:40:01.273  INFO 16134 --- [main] com.demo.DemoApplication                 : Started DemoApplication in 9.249 seconds (JVM running for 9.87)
+2018-08-27 10:40:24.258  INFO 16134 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-27 10:40:24.258  INFO 16134 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-27 10:40:24.291  INFO 16134 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+2018-08-27 10:40:45.463  INFO 16134 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3d680b5a: startup date [Mon Aug 27 10:39:53 CST 2018]; root of context hierarchy
+2018-08-27 10:40:45.470  INFO 16134 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-08-27 10:40:45.471  INFO 16134 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-08-27 10:40:45.475  INFO 16134 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-08-27 10:40:45.476  INFO 16134 --- [Thread-3] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+2018-08-27 10:40:45.485  INFO 16134 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-08-27 10:40:45.498  INFO 16134 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-08-27 10:40:55.389  INFO 16144 --- [main] com.demo.DemoApplication                 : Starting DemoApplication on Jia-yinteki-MacBook-Pro.local with PID 16144 (/Users/jia/git/demoSpringBoot/demoSpringBoot/target/classes started by jia in /Users/jia/git/demoSpringBoot/demoSpringBoot)
+2018-08-27 10:40:55.399  INFO 16144 --- [main] com.demo.DemoApplication                 : No active profile set, falling back to default profiles: default
+2018-08-27 10:40:55.490  INFO 16144 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5bd03f44: startup date [Mon Aug 27 10:40:55 CST 2018]; root of context hierarchy
+2018-08-27 10:40:57.578  INFO 16144 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d4399979] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-27 10:40:58.354  INFO 16144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-08-27 10:40:58.405  INFO 16144 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-27 10:40:58.405  INFO 16144 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-27 10:40:58.420  INFO 16144 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/jia/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-08-27 10:40:58.791  INFO 16144 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-08-27 10:40:58.797  INFO 16144 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-08-27 10:40:58.797  INFO 16144 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3307 ms
+2018-08-27 10:40:58.897  INFO 16144 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-08-27 10:40:58.903  INFO 16144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-27 10:40:58.903  INFO 16144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-27 10:40:58.903  INFO 16144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-27 10:40:58.903  INFO 16144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-27 10:40:59.256  INFO 16144 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-08-27 10:40:59.677  INFO 16144 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-08-27 10:40:59.740  INFO 16144 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-08-27 10:40:59.763  INFO 16144 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-08-27 10:40:59.909  INFO 16144 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-08-27 10:40:59.911  INFO 16144 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-08-27 10:40:59.976  INFO 16144 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-08-27 10:41:00.150  INFO 16144 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-08-27 10:41:00.830  INFO 16144 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@38b3f208'
+2018-08-27 10:41:00.834  INFO 16144 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-08-27 10:41:01.741  INFO 16144 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-27 10:41:02.230  INFO 16144 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5bd03f44: startup date [Mon Aug 27 10:40:55 CST 2018]; root of context hierarchy
+2018-08-27 10:41:02.311  WARN 16144 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-08-27 10:41:02.372  INFO 16144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.demo.controller.LoginCrl.showCustomers2()
+2018-08-27 10:41:02.377  INFO 16144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mem/add]}" onto public java.lang.String com.demo.controller.MemCrl.addMem()
+2018-08-27 10:41:02.377  INFO 16144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mem/show]}" onto public java.lang.String com.demo.controller.MemCrl.showMemList()
+2018-08-27 10:41:02.387  INFO 16144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/loginHtml],methods=[GET]}" onto public java.lang.String com.demo.controller.MemJPACrl.login(com.demo.model.MemVoJPA)
+2018-08-27 10:41:02.388  INFO 16144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/doLogin],methods=[POST]}" onto public java.lang.String com.demo.controller.MemJPACrl.doLogin(com.demo.model.MemVoJPA)
+2018-08-27 10:41:02.389  INFO 16144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addMemJpa],methods=[GET]}" onto public java.lang.String com.demo.controller.MemJPACrl.addMemJpa()
+2018-08-27 10:41:02.390  INFO 16144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rest]}" onto public java.lang.String com.demo.controller.RestCrl.login()
+2018-08-27 10:41:02.395  INFO 16144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-27 10:41:02.397  INFO 16144 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-27 10:41:02.444  INFO 16144 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-27 10:41:02.444  INFO 16144 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-27 10:41:02.881  INFO 16144 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-08-27 10:41:02.883  INFO 16144 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-27 10:41:02.895  INFO 16144 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-27 10:41:03.032  INFO 16144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-27 10:41:03.046  INFO 16144 --- [main] com.demo.DemoApplication                 : Started DemoApplication in 8.399 seconds (JVM running for 9.003)
+2018-08-27 10:41:15.191  INFO 16144 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-27 10:41:15.191  INFO 16144 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-27 10:41:15.222  INFO 16144 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+2018-08-27 11:25:50.060  INFO 16144 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5bd03f44: startup date [Mon Aug 27 10:40:55 CST 2018]; root of context hierarchy
+2018-08-27 11:25:50.064  INFO 16144 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-08-27 11:25:50.077  INFO 16144 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-08-27 11:25:50.079  INFO 16144 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-08-27 11:25:50.080  INFO 16144 --- [Thread-3] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+2018-08-27 11:25:50.112  INFO 16144 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-08-27 11:25:50.129  INFO 16144 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-08-27 12:03:03.327  INFO 17381 --- [main] com.demo.DemoApplication                 : Starting DemoApplication on Jia-yinteki-MacBook-Pro.local with PID 17381 (/Users/jia/git/demoSpringBoot/demoSpringBoot/target/classes started by jia in /Users/jia/git/demoSpringBoot/demoSpringBoot)
+2018-08-27 12:03:03.334  INFO 17381 --- [main] com.demo.DemoApplication                 : No active profile set, falling back to default profiles: default
+2018-08-27 12:03:03.443  INFO 17381 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1622f1b: startup date [Mon Aug 27 12:03:03 CST 2018]; root of context hierarchy
+2018-08-27 12:03:04.949  INFO 17381 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-08-27 12:03:06.494  INFO 17381 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7d1f36f9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-27 12:03:07.627  INFO 17381 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-08-27 12:03:07.690  INFO 17381 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-27 12:03:07.690  INFO 17381 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-27 12:03:07.711  INFO 17381 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/jia/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-08-27 12:03:08.249  INFO 17381 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-08-27 12:03:08.258  INFO 17381 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-08-27 12:03:08.258  INFO 17381 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4815 ms
+2018-08-27 12:03:08.341 ERROR 17381 --- [localhost-startStop-1] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'sessionRepositoryFilterRegistration' defined in class path resource [org/springframework/boot/autoconfigure/session/SessionRepositoryFilterConfiguration.class]: Unsatisfied dependency expressed through method 'sessionRepositoryFilterRegistration' parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfiguration': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2018-08-27 12:03:08.406  INFO 17381 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-08-27 12:03:08.436  WARN 17381 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2018-08-27 12:03:08.454  INFO 17381 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-08-27 12:03:08.739 ERROR 17381 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of method sessionRepositoryFilterRegistration in org.springframework.boot.autoconfigure.session.SessionRepositoryFilterConfiguration required a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' that could not be found.
+	- Bean method 'redisConnectionFactory' not loaded because @ConditionalOnClass did not find required classes 'org.apache.commons.pool2.impl.GenericObjectPool', 'redis.clients.jedis.Jedis'
+	- Bean method 'redisConnectionFactory' not loaded because @ConditionalOnClass did not find required class 'io.lettuce.core.RedisClient'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.data.redis.connection.RedisConnectionFactory' in your configuration.
+
+2018-08-27 12:05:42.589  INFO 17428 --- [main] com.demo.DemoApplication                 : Starting DemoApplication on Jia-yinteki-MacBook-Pro.local with PID 17428 (/Users/jia/git/demoSpringBoot/demoSpringBoot/target/classes started by jia in /Users/jia/git/demoSpringBoot/demoSpringBoot)
+2018-08-27 12:05:42.604  INFO 17428 --- [main] com.demo.DemoApplication                 : No active profile set, falling back to default profiles: default
+2018-08-27 12:05:42.732  INFO 17428 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@be64738: startup date [Mon Aug 27 12:05:42 CST 2018]; root of context hierarchy
+2018-08-27 12:05:45.085  INFO 17428 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6adca380] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-27 12:05:46.265  INFO 17428 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-08-27 12:05:46.330  INFO 17428 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-27 12:05:46.330  INFO 17428 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-08-27 12:05:46.349  INFO 17428 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/jia/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-08-27 12:05:46.762  INFO 17428 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-08-27 12:05:46.769  INFO 17428 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-08-27 12:05:46.770  INFO 17428 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4038 ms
+2018-08-27 12:05:46.881  INFO 17428 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-08-27 12:05:46.893  INFO 17428 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-27 12:05:46.894  INFO 17428 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-27 12:05:46.894  INFO 17428 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-27 12:05:46.894  INFO 17428 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-27 12:05:47.315  INFO 17428 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-08-27 12:05:47.803  INFO 17428 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-08-27 12:05:47.883  INFO 17428 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-08-27 12:05:47.938  INFO 17428 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-08-27 12:05:48.108  INFO 17428 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-08-27 12:05:48.110  INFO 17428 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-08-27 12:05:48.194  INFO 17428 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-08-27 12:05:48.417  INFO 17428 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-08-27 12:05:49.298  INFO 17428 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@32a2a6be'
+2018-08-27 12:05:49.302  INFO 17428 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-08-27 12:05:50.363  INFO 17428 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-27 12:05:50.914  INFO 17428 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@be64738: startup date [Mon Aug 27 12:05:42 CST 2018]; root of context hierarchy
+2018-08-27 12:05:51.008  WARN 17428 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-08-27 12:05:51.073  INFO 17428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.demo.controller.LoginCrl.showCustomers2()
+2018-08-27 12:05:51.078  INFO 17428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mem/add]}" onto public java.lang.String com.demo.controller.MemCrl.addMem()
+2018-08-27 12:05:51.079  INFO 17428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mem/show]}" onto public java.lang.String com.demo.controller.MemCrl.showMemList()
+2018-08-27 12:05:51.094  INFO 17428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/loginHtml],methods=[GET]}" onto public java.lang.String com.demo.controller.MemJPACrl.login(com.demo.model.MemVoJPA)
+2018-08-27 12:05:51.095  INFO 17428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/doLogin],methods=[POST]}" onto public java.lang.String com.demo.controller.MemJPACrl.doLogin(com.demo.model.MemVoJPA,javax.servlet.http.HttpSession)
+2018-08-27 12:05:51.095  INFO 17428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/doLogOut],methods=[POST]}" onto public java.lang.String com.demo.controller.MemJPACrl.doLogOut(javax.servlet.http.HttpSession)
+2018-08-27 12:05:51.096  INFO 17428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addMemJpa],methods=[GET]}" onto public java.lang.String com.demo.controller.MemJPACrl.addMemJpa()
+2018-08-27 12:05:51.097  INFO 17428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/memberApi/memberTest]}" onto public com.demo.model.MemVo com.demo.controller.RestCrl.memberTest()
+2018-08-27 12:05:51.097  INFO 17428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rest]}" onto public java.lang.String com.demo.controller.RestCrl.login()
+2018-08-27 12:05:51.104  INFO 17428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-27 12:05:51.106  INFO 17428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-27 12:05:51.167  INFO 17428 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-27 12:05:51.167  INFO 17428 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-27 12:05:51.258  INFO 17428 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-08-27 12:05:51.626  INFO 17428 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-08-27 12:05:51.628  INFO 17428 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-27 12:05:51.636  INFO 17428 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-27 12:05:51.732  INFO 17428 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-27 12:05:51.738  INFO 17428 --- [main] com.demo.DemoApplication                 : Started DemoApplication in 10.024 seconds (JVM running for 10.632)
+2018-08-27 12:06:05.144  INFO 17428 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-27 12:06:05.144  INFO 17428 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-27 12:06:05.174  INFO 17428 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2018-08-27 12:39:24.411  INFO 17654 --- [main] com.demo.DemoApplicationTests            : Starting DemoApplicationTests on Jia-yinteki-MacBook-Pro.local with PID 17654 (started by jia in /Users/jia/git/demoSpringBoot/demoSpringBoot)
+2018-08-27 12:39:24.414  INFO 17654 --- [main] com.demo.DemoApplicationTests            : No active profile set, falling back to default profiles: default
+2018-08-27 12:39:24.460  INFO 17654 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@29d80d2b: startup date [Mon Aug 27 12:39:24 CST 2018]; root of context hierarchy
+2018-08-27 12:39:26.517  INFO 17654 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e730fb07] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-27 12:39:26.987  INFO 17654 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-08-27 12:39:27.418  INFO 17654 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-08-27 12:39:27.482  INFO 17654 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-08-27 12:39:27.503  INFO 17654 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-08-27 12:39:27.792  INFO 17654 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-08-27 12:39:27.794  INFO 17654 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-08-27 12:39:27.859  INFO 17654 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-08-27 12:39:28.043  INFO 17654 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-08-27 12:39:28.908  INFO 17654 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@3408f695'
+2018-08-27 12:39:28.913  INFO 17654 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-08-27 12:39:30.256  INFO 17654 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-27 12:39:30.779  INFO 17654 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@29d80d2b: startup date [Mon Aug 27 12:39:24 CST 2018]; root of context hierarchy
+2018-08-27 12:39:30.858  WARN 17654 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-08-27 12:39:30.929  INFO 17654 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.demo.controller.LoginCrl.showCustomers2()
+2018-08-27 12:39:30.932  INFO 17654 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mem/add]}" onto public java.lang.String com.demo.controller.MemCrl.addMem()
+2018-08-27 12:39:30.932  INFO 17654 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mem/show]}" onto public java.lang.String com.demo.controller.MemCrl.showMemList()
+2018-08-27 12:39:30.940  INFO 17654 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/loginHtml],methods=[GET]}" onto public java.lang.String com.demo.controller.MemJPACrl.login(com.demo.model.MemVoJPA)
+2018-08-27 12:39:30.941  INFO 17654 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/doLogin],methods=[POST]}" onto public java.lang.String com.demo.controller.MemJPACrl.doLogin(com.demo.model.MemVoJPA,javax.servlet.http.HttpSession)
+2018-08-27 12:39:30.942  INFO 17654 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/doLogOut],methods=[POST]}" onto public java.lang.String com.demo.controller.MemJPACrl.doLogOut(javax.servlet.http.HttpSession)
+2018-08-27 12:39:30.942  INFO 17654 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addMemJpa],methods=[GET]}" onto public java.lang.String com.demo.controller.MemJPACrl.addMemJpa()
+2018-08-27 12:39:30.946  INFO 17654 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/memberApi],methods=[PUT],consumes=[application/json]}" onto public void com.demo.controller.RestApiCrl.update(com.demo.model.MemVo)
+2018-08-27 12:39:30.947  INFO 17654 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/memberApi/{id}],methods=[DELETE]}" onto public void com.demo.controller.RestApiCrl.delete(long)
+2018-08-27 12:39:30.947  INFO 17654 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/memberApi],methods=[POST],consumes=[application/json]}" onto public void com.demo.controller.RestApiCrl.create(com.demo.model.MemVo)
+2018-08-27 12:39:30.949  INFO 17654 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rest]}" onto public java.lang.String com.demo.controller.RestCrl.login()
+2018-08-27 12:39:30.949  INFO 17654 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/memberApi/memberTest]}" onto public com.demo.model.MemVo com.demo.controller.RestCrl.memberTest()
+2018-08-27 12:39:30.954  INFO 17654 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-27 12:39:30.955  INFO 17654 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-27 12:39:31.014  INFO 17654 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-27 12:39:31.014  INFO 17654 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-27 12:39:31.109  INFO 17654 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-08-27 12:39:31.442  INFO 17654 --- [main] com.demo.DemoApplicationTests            : Started DemoApplicationTests in 7.858 seconds (JVM running for 9.292)
+2018-08-27 12:39:31.753  INFO 17654 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@29d80d2b: startup date [Mon Aug 27 12:39:24 CST 2018]; root of context hierarchy
+2018-08-27 12:39:31.761  INFO 17654 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-08-27 12:39:31.762  INFO 17654 --- [Thread-2] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+2018-08-27 12:39:31.770  INFO 17654 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-08-27 12:39:31.781  INFO 17654 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-08-27 12:43:57.818  INFO 17698 --- [main] com.demo.DemoApplicationTests            : Starting DemoApplicationTests on Jia-yinteki-MacBook-Pro.local with PID 17698 (started by jia in /Users/jia/git/demoSpringBoot/demoSpringBoot)
+2018-08-27 12:43:57.820  INFO 17698 --- [main] com.demo.DemoApplicationTests            : No active profile set, falling back to default profiles: default
+2018-08-27 12:43:57.923  INFO 17698 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@169bb4dd: startup date [Mon Aug 27 12:43:57 CST 2018]; root of context hierarchy
+2018-08-27 12:43:59.911  INFO 17698 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$76b41c0d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-27 12:44:00.311  INFO 17698 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-08-27 12:44:00.733  INFO 17698 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-08-27 12:44:00.799  INFO 17698 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-08-27 12:44:00.819  INFO 17698 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-08-27 12:44:01.088  INFO 17698 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-08-27 12:44:01.090  INFO 17698 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-08-27 12:44:01.173  INFO 17698 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-08-27 12:44:01.355  INFO 17698 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-08-27 12:44:02.237  INFO 17698 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1d858300'
+2018-08-27 12:44:02.240  INFO 17698 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-08-27 12:44:03.475  INFO 17698 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-27 12:44:04.066  INFO 17698 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@169bb4dd: startup date [Mon Aug 27 12:43:57 CST 2018]; root of context hierarchy
+2018-08-27 12:44:04.147  WARN 17698 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-08-27 12:44:04.204  INFO 17698 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.demo.controller.LoginCrl.showCustomers2()
+2018-08-27 12:44:04.208  INFO 17698 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mem/add]}" onto public java.lang.String com.demo.controller.MemCrl.addMem()
+2018-08-27 12:44:04.209  INFO 17698 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mem/show]}" onto public java.lang.String com.demo.controller.MemCrl.showMemList()
+2018-08-27 12:44:04.221  INFO 17698 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/loginHtml],methods=[GET]}" onto public java.lang.String com.demo.controller.MemJPACrl.login(com.demo.model.MemVoJPA)
+2018-08-27 12:44:04.221  INFO 17698 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/doLogin],methods=[POST]}" onto public java.lang.String com.demo.controller.MemJPACrl.doLogin(com.demo.model.MemVoJPA,javax.servlet.http.HttpSession)
+2018-08-27 12:44:04.222  INFO 17698 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/doLogOut],methods=[POST]}" onto public java.lang.String com.demo.controller.MemJPACrl.doLogOut(javax.servlet.http.HttpSession)
+2018-08-27 12:44:04.222  INFO 17698 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addMemJpa],methods=[GET]}" onto public java.lang.String com.demo.controller.MemJPACrl.addMemJpa()
+2018-08-27 12:44:04.229  INFO 17698 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/memberApi],methods=[PUT],consumes=[application/json]}" onto public void com.demo.controller.RestApiCrl.update(com.demo.model.MemVo)
+2018-08-27 12:44:04.230  INFO 17698 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/memberApi/{id}],methods=[DELETE]}" onto public void com.demo.controller.RestApiCrl.delete(long)
+2018-08-27 12:44:04.231  INFO 17698 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/memberApi],methods=[POST],consumes=[application/json]}" onto public void com.demo.controller.RestApiCrl.create(com.demo.model.MemVo)
+2018-08-27 12:44:04.232  INFO 17698 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rest]}" onto public java.lang.String com.demo.controller.RestCrl.login()
+2018-08-27 12:44:04.233  INFO 17698 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/memberApi/memberTest]}" onto public com.demo.model.MemVo com.demo.controller.RestCrl.memberTest()
+2018-08-27 12:44:04.238  INFO 17698 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-27 12:44:04.239  INFO 17698 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-27 12:44:04.301  INFO 17698 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-27 12:44:04.302  INFO 17698 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-27 12:44:04.405  INFO 17698 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-08-27 12:44:04.754  INFO 17698 --- [main] com.demo.DemoApplicationTests            : Started DemoApplicationTests in 7.643 seconds (JVM running for 8.982)
+2018-08-27 12:44:04.912  INFO 17698 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring FrameworkServlet ''
+2018-08-27 12:44:04.913  INFO 17698 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2018-08-27 12:44:04.933  INFO 17698 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 19 ms
+2018-08-27 12:44:04.981  WARN 17698 --- [main] o.s.web.servlet.PageNotFound             : Request method 'GET' not supported
+2018-08-27 12:44:05.054  INFO 17698 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@169bb4dd: startup date [Mon Aug 27 12:43:57 CST 2018]; root of context hierarchy
+2018-08-27 12:44:05.061  INFO 17698 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-08-27 12:44:05.061  INFO 17698 --- [Thread-2] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+2018-08-27 12:44:05.069  INFO 17698 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-08-27 12:44:05.079  INFO 17698 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-08-27 16:08:55.179  INFO 17428 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@be64738: startup date [Mon Aug 27 12:05:42 CST 2018]; root of context hierarchy
+2018-08-27 16:08:55.186  INFO 17428 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-08-27 16:08:55.187  INFO 17428 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-08-27 16:08:55.190  INFO 17428 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-08-27 16:08:55.190  INFO 17428 --- [Thread-3] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+2018-08-27 16:08:55.197  INFO 17428 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-08-27 16:08:55.203  INFO 17428 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

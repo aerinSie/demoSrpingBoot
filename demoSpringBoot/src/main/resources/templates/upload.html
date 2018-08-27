@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>My first Page by thymeleaf</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<form method="POST" enctype="multipart/form-data" id="UploadForm">
+		<input type="text" name="extraField" /><br /> <br /> <input
+			type="file" name="files" /><br /> <br /> <input type="file"
+			name="files" /><br /> <br /> <input type="submit" value="Submit"
+			id="btnSubmit" />
+	</form>
+	<h1>Ajax Post Result</h1>
+	<pre>
+    <span id="result"></span>
+</pre>
+	<script type="text/javascript" src="webjars/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/upload.js"></script>
+</body>
+
+</html>
