@@ -22,12 +22,15 @@ import com.demo.model.MemVoJPA;
 public class RestApiCrl {
 	@Autowired
 	MemDaoJPA memDao;
-
-	//設定返回的response的媒體類型和文字的編碼,ex:返回為JSON格式,字元編碼為UTF-8
-	@RequestMapping(value="/{id}",produces={"application/json;charset=UTF-8"})
+	@RequestMapping(method = RequestMethod.GET)
+	public String testRest() {
+		return "hello spring";
+	}
+	// 設定返回的response的媒體類型和文字的編碼,ex:返回為JSON格式,字元編碼為UTF-8
+	@RequestMapping(value = "/{id}", produces = { "application/json;charset=UTF-8" })
 	public Optional<MemVoJPA> read(@PathVariable long id) {
-			return memDao.findById(id);
-		 }
+		return memDao.findById(id);
+	}
 
 	@RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
 	public void create(@RequestBody MemVoJPA memberaccount) {
@@ -45,14 +48,15 @@ public class RestApiCrl {
 		memDao.deleteById(id);
 
 	}
-	
-	@RequestMapping(value="/{id}")
-	 public Optional<MemVoJPA> read(@ModelAttribute("message") String msg,Model model,@PathVariable long id) {
+
+	@RequestMapping(value = "/{id}")
+	public Optional<MemVoJPA> read(@ModelAttribute("message") String msg, Model model, @PathVariable long id) {
 
 		Map map = new HashMap();
 		String email = map.get("EMAIL").toString();
-		if(email == null) throw new NullPointerException(email);
+		if (email == null)
+			throw new NullPointerException(email);
 		System.out.println(email);
 		return memDao.findById(id);
-	 }
+	}
 }
